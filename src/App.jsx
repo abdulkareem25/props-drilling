@@ -13,6 +13,10 @@ import NotFound from './components/NotFound'
 const App = () => {
   const [name, setName] = useState('Zahir');
 
+  function changeName(newName) {
+    setName(newName);
+  }
+
   return (
     <div>
       <Navbar />
@@ -23,7 +27,7 @@ const App = () => {
           <Route path='/courses/cohort' element={<Cohort />} />
           <Route path='/courses/dynamic/:id?' element={<Dynamic />} />
         </Route>
-        <Route path='/profile' element={<Profile setName={setName} />} />
+        <Route path='/profile' element={<Profile changeName={changeName} />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

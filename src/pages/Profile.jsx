@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Profile = ({ setName }) => {
+const Profile = ({ changeName }) => {
 
   const [newName, setNewName] = useState('');
 
@@ -10,7 +10,7 @@ const Profile = ({ setName }) => {
       <form
       onSubmit={(e) => {
         e.preventDefault();
-        setName(newName);
+        changeName(newName);
         setNewName('');
       }}
       >
