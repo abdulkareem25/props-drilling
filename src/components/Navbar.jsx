@@ -8,7 +8,7 @@ import Profile from '../pages/Profile'
 const Navbar = () => {
     return (
         <div className='nav'>
-            <h3>Kareem</h3>
+            <h3>Abdul Kareem</h3>
             <div className="links">
                 <NavLink
                     className={({ isActive }) => (isActive ? 'red' : 'link')}
