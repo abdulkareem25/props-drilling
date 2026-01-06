@@ -23,7 +23,7 @@ const App = () => {
           <Route path='/courses/cohort' element={<Cohort />} />
           <Route path='/courses/dynamic/:id?' element={<Dynamic />} />
         </Route>
-        <Route path='/profile' element={<Profile name={name} setName={setName} />} />
+        <Route path='/profile' element={<Profile setName={setName} />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
